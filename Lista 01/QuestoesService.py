@@ -48,7 +48,6 @@ class Questao03:
         eixo.plot(ponto_a[0], ponto_a[1], 'bo', label = 'Ponto A')
         eixo.plot(ponto_b[0], ponto_b[1], 'ro', label = 'Ponto B')
 
-        eixo.plot([ponto_a[0], ponto_a[1]], [ponto_b[0], ponto_b[1]], 'k-', label='Linha AB', colors='blue')
-        print('Entrei ate aqui')
-        # plot.scaller(ponto_a, ponto_b, colors="red")
+        eixo.plot([ponto_a[0], ponto_b[0]], [ponto_a[1], ponto_b[1]], 'k-', label='Linha AB')
         plot.show()
+
