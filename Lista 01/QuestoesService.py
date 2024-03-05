@@ -99,3 +99,7 @@ class Questao05:
 
         eixo.plot([a[0], b[0], c[0], a[0]], [a[1], b[1], c[1], a[1]], 'k-', label='Triangulo ABC')
         plot.show()
+
+class Questao06:
+    def resolucao(ponto_a: list, ponto_b: list, ponto_c: list, translacao: list):
+        Questao05.resolucao(ponto_a, ponto_b, ponto_c, translacao)
