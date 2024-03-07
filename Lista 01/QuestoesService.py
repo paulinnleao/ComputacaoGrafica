@@ -78,7 +78,6 @@ class Questao04:
 
 class Questao05:
     def resolucao(ponto_a: list, ponto_b: list, ponto_c: list, translacao: list):
-        escala: list = calcularMaxEMin([ponto_a, ponto_b, ponto_c])
         figura, eixo = plot.subplots()
 
         npA: list = np.append(ponto_a, 1)
@@ -89,6 +88,9 @@ class Questao05:
         b: list = np.dot(translacao, npB)
         c: list = np.dot(translacao, npC)
 
+
+        escala: list = calcularMaxEMin([a, b, c])
+        
         eixo.set_xlim(escala[0], escala[1])
         eixo.set_ylim(escala[0], escala[1])
         eixo.grid()
