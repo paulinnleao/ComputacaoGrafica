@@ -29,6 +29,7 @@ class Questao01:
         eixo.set_ylim(0, 10)
         eixo.grid()
         eixo.text(ponto_x, ponto_y, 'O', fontsize=8, color='red')
+        figura.suptitle('Questão 01')
         plot.show()
 
 class Questao02:
@@ -43,6 +44,7 @@ class Questao02:
         eixo.text(ponto_a[0], ponto_a[1], 'O', fontsize=8, color='green')
         eixo.text(ponto_b[0], ponto_b[1], '+', fontsize=8, color='blue')
 
+        figura.suptitle('Questão 02')
         plot.show()
 
 class Questao03:
@@ -58,6 +60,7 @@ class Questao03:
         eixo.plot(ponto_b[0], ponto_b[1], 'ro', label = 'Ponto B')
 
         eixo.plot([ponto_a[0], ponto_b[0]], [ponto_a[1], ponto_b[1]], 'k-', label='Linha AB')
+        figura.suptitle('Questão 03')
         plot.show()
 
 class Questao04:
@@ -74,6 +77,7 @@ class Questao04:
         eixo.plot(ponto_c[0], ponto_c[1], 'go', label = 'Ponto C')
 
         eixo.plot([ponto_a[0], ponto_b[0], ponto_c[0], ponto_a[0]], [ponto_a[1], ponto_b[1], ponto_c[1], ponto_a[1]], 'k-', label='Triangulo ABC')
+        figura.suptitle('Questão 04')
         plot.show()
 
 class Questao05:
@@ -100,6 +104,7 @@ class Questao05:
         eixo.plot(c[0], c[1], 'go', label = 'Ponto C')
 
         eixo.plot([a[0], b[0], c[0], a[0]], [a[1], b[1], c[1], a[1]], 'k-', label='Triangulo ABC')
+        figura.suptitle('Questão 05 e 06')
         plot.show()
 
 class Questao06:
